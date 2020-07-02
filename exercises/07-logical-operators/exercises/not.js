@@ -6,6 +6,11 @@ const not = (value) => {
   return _ ? _ : _;
 };
 
+    let niet = !(value);
+    return niet;
+
+}
+
 const _1_expect = true;
 const _1_actual = not(0);
 console.assert(_1_actual === _1_expect, 'Test 1');

@@ -6,6 +6,11 @@ const or = (left, right) => {
   return _ ? _ : _;
 };
 
+    let of = left || right;
+    return of;
+
+}
+
 const _1_expect = 0;
 const _1_actual = or(0, 0);
 console.assert(_1_actual === _1_expect, 'Test 1');
