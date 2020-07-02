@@ -9,12 +9,18 @@
 */
 
 const withAnd = (x, y) => {
-  return _;
+  let booleanedXY = Boolean(x, y);
+  let demorgan = !x&&!y;
+  let demorganNumbered = Number(demorgan);
+  return demorganNumbered;
 };
 
 
 const withOr = (x, y) => {
-  return _;
+  let booleanedXY2 = Boolean(x, y);
+  let demorgan2 = !(x||y);
+  let demorganNumbered2 = Number(demorgan2);
+  return demorganNumbered2;
 };
 
 
