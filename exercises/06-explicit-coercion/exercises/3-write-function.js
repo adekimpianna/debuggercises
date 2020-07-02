@@ -7,7 +7,11 @@
 */
 const mystery = (x, y) => {
 
-};
+  let valueX = Number(x);
+  let valueY = Number(y);
+  return valueY === valueX;
+
+}
 
 // all of the test cases are correct
 
