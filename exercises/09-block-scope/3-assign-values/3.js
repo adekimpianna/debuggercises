@@ -1,13 +1,13 @@
 'use strict';
 
-let m = _;
+let m = 'tall';
 console.assert(m === 'tall', 'Test 1: m');
 {
-  let l = _;
-  const m = _;
-  l = _;
+  let l = 'short';
+  const m = l;
+  l = 'mini';
   console.assert(m === 'short', 'Test 2: m');
   console.assert(l === 'mini', 'Test 3: l');
 }
-m = _;
+m = 'medium';
 console.assert(m === 'medium', 'Test 4: m');

@@ -6,4 +6,4 @@ let m = 0;
   const m = 1;
   l = 0;
 }
-console.assert(_ === 0, 'Test 1');
+console.assert(m === 0, 'Test 1');

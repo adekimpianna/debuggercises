@@ -6,4 +6,4 @@ let b = 3;
   const a = 5;
   b = a;
 }
-console.assert(_ === 5, 'Test 1');
+console.assert(b === 5, 'Test 1');

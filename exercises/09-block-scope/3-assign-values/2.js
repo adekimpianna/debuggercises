@@ -1,10 +1,10 @@
 'use strict';
 
-let x = _;
+let x = null;
 console.assert(x === null, 'Test 1: x');
 {
-  x = _;
-  const y = _;
+  x = false;
+  const y = null;
 
   console.assert(x === false, 'Test 2: x');
   console.assert(y === null, 'Test 3: y');
