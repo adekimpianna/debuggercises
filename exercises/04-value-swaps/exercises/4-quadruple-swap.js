@@ -6,9 +6,12 @@ let c = 'w';
 let d = 'x';
 let temp = null;
 
-// write some code, be sure to use temp!
-
-
+// write some code!
+temp = a;
+a = c;
+b = d;
+c = temp;
+d = b + b;
 
 
 // fill in the _ to pass the final assertions
@@ -25,6 +28,6 @@ console.assert(isTrue3, 'Test 3');
 const isTrue4 = d === 'z';
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 3;
 console.assert(isTrue5, 'Test 5');
 

@@ -13,10 +13,11 @@ temp = a;
 a = b;
 const d = a;
 
-// write some code, be sure to use temp!
+// write your code below here
 
-
-
+a = c;
+c = b;
+b = temp;
 
 // fill in in the _'s to pass the final assertions
 
@@ -29,9 +30,9 @@ console.assert(isTrue2, 'Test 2');
 const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = d === _;
+const isTrue4 = d === 3;
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 2;
 console.assert(isTrue5, 'Test 5');
 
