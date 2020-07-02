@@ -1,8 +1,9 @@
 'use strict';
 
-const scramble = () => {
+function scramble(param1, param2, param3) {
+    return `${param3}${param1}${param2}`;
 
-};
+}
 
 const _1_expect = "yxz";
 const _1_actual = scramble('x', 'z', 'y');
@@ -12,7 +13,6 @@ const _2_expect = "zxy";
 const _2_actual = scramble('x', 'y', 'z');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = "yzx";
-const _3_actual = scramble('z', 'x', 'y');
+const _3_expect = "yxz";
+const _3_actual = scramble('x', 'z', 'y');
 console.assert(_3_actual === _3_expect, 'Test 3');
-
