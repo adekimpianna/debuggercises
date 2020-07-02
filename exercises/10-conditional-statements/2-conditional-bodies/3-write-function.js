@@ -6,11 +6,11 @@
 const mystery = (a, b) => {
   let result = '';
   if (typeof a === typeof b) {
-    result = _;
+    result = a ;
   } else if (Boolean(a) === Boolean(b)) {
-    result = _;
+    result = b ;
   } else {
-    result = _;
+    result = a || b ;
   }
   return result;
 };

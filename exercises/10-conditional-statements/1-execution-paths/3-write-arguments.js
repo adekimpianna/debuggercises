@@ -1,14 +1,14 @@
 const mystery = (a, b) => {
   let result = '';
-  if (typeof a === 'number') {
-    if (typeof b === 'number') {
-      result = 'path 1';
+  if (Boolean(a) === true || typeof a === 'string') {
+    if (typeof b === 'string') {
+      result = 'path 3';
     } else {
       result = 'path 2';
     }
   } else {
-    if (typeof a === typeof b) {
-      result = 'path 3';
+    if (typeof b === 'object' || typeof b === 'string') {
+      result = 'path 1';
     } else {
       result = 'path 4';
     }
